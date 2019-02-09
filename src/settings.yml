@@ -1,0 +1,66 @@
+settings:
+  symbol: "§e☉" # Symbol displayed on the compass to represent this kind of trackers positions.
+  temp:   "ϼ"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
+
+  auto_activated: true # If true, the tracker is automatically activated when a position is created
+
+  limits:
+    ADD: 10  # Number of maximum named coords a player can define
+    START: 1 # Number of maximum simultaneous positions a player (from this tracker) can track
+
+locales:
+  en:
+    name: "coords"
+
+    list: "{prefix}&rNamed coordinates: {list}."
+    list_empty: "{prefix}&rNo named coordinates."
+
+    ADD: "{prefix}&aNamed coordinate &e{target}&a has been created."
+    DEL: "{prefix}&aNamed coordinate &e{target}&a has been deleted."
+    START: "{prefix}&6You are now tracking &e{target}&6 coordinate."
+    STOP: "{prefix}&6You no longer track &e{target}&6 coordinate."
+
+    help:
+      noargs: |
+        &r- &c/{command} &e{tracker}
+        &7  Show the list of your named coordinates.
+      ADD: |
+        &r- &c/{command} &e{tracker} &6{ADD} &3<name> &b<x> <z>
+        &7  Add a new named coordinate.
+      DEL: |
+        &r- &c/{command} &e{tracker} &6{DEL} &3<name>
+        &7  Delete a named coordinate.
+      START: |
+        &r- &c/{command} &e{tracker} &6{START} &3<name>
+        &7  Begin the tracking of this named coordinate.
+      STOP: |
+        &r- &c/{command} &e{tracker} &6{STOP} &3<name>
+        &7  End the tracking of this named coordinate.
+
+  fr:
+    name: "coords"
+
+    list: "{prefix}&rCoordonnées nommées : {list}."
+    list_empty: "{prefix}&rAucunes coordonnées nommées."
+
+    ADD: "{prefix}&aLes coordonnées &e{target}&a ont été créées."
+    DEL: "{prefix}&aLes coordonnées &e{target}&a ont été supprimée."
+    START: "{prefix}&6Tu pistes maintenant les coordonnées &e{target}&6."
+    STOP: "{prefix}&6Tu ne pistes plus les coordonnées &e{target}&6."
+
+    help:
+      noargs: |
+        &r- &c/{command} &e{tracker}
+        &7  Affiche la liste des coordonnées nommées.
+      ADD: |
+        &r- &c/{command} &e{tracker} &6{ADD} &3<nom> &b<x> <z>
+        &7  Crée une coordonnée nommée.
+      DEL: |
+        &r- &c/{command} &e{tracker} &6{DEL} &3<nom>
+        &7  Supprime une coordonnée nommée.
+      START: |
+        &r- &c/{command} &e{tracker} &6{START} &3<nom>
+        &7  Démarre le pistage d'une coordonnée nommée.
+      STOP: |
+        &r- &c/{command} &e{tracker} &6{STOP} &3<nom>
+        &7  Arrête le pistage d'une coordonnée nommée.
