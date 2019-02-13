@@ -16,6 +16,25 @@ public class CoordsTracker extends AbstractTracker {
   }
 
   // ----------------------------------------------------------------------------------------------
+  // Tracker methods
+  // ----------------------------------------------------------------------------------------------
+
+  @Override
+  public String github() {
+    return "arboriginal/SCT-CoordsTracker";
+  }
+
+  @Override
+  public String trackerID() {
+    return "COORDS";
+  }
+
+  @Override
+  public String version() {
+    return "2";
+  }
+
+  // ----------------------------------------------------------------------------------------------
   // Actions methods
   // ----------------------------------------------------------------------------------------------
 
@@ -36,15 +55,6 @@ public class CoordsTracker extends AbstractTracker {
 
   public TargetSelector requireTarget(TrackingActions action) {
     return action.equals(TrackingActions.ADD) ? TargetSelector.NEWCOORDS : super.requireTarget(action);
-  }
-
-  // ----------------------------------------------------------------------------------------------
-  // Tracker methods
-  // ----------------------------------------------------------------------------------------------
-
-  @Override
-  public String trackerID() {
-    return "COORDS";
   }
 
   // ----------------------------------------------------------------------------------------------
