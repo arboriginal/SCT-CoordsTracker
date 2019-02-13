@@ -31,7 +31,7 @@ public class CoordsTracker extends AbstractTracker {
 
   @Override
   public String version() {
-    return "2";
+    return "3";
   }
 
   // ----------------------------------------------------------------------------------------------
@@ -53,6 +53,7 @@ public class CoordsTracker extends AbstractTracker {
     return list;
   }
 
+  @Override
   public TargetSelector requireTarget(TrackingActions action) {
     return action.equals(TrackingActions.ADD) ? TargetSelector.NEWCOORDS : super.requireTarget(action);
   }

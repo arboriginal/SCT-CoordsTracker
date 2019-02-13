@@ -5,6 +5,7 @@ settings:
   temp:   "ϼ"   # Advanced: Symbol temporary used by the plugin, must be unique, 1 char and not used in "symbol".
 
   auto_activated: true # If true, the tracker is automatically activated when a position is created
+  auto_disabled: 5 # If player closer than this (in blocks) from the target, the tracking stop automatically (0 to disable). 
 
   limits:
     ADD: 10  # Number of maximum named coords a player can define
