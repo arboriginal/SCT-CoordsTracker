@@ -1,3 +1,6 @@
+# You can find the default config with description of parameters here:
+# https://github.com/arboriginal/SCT-CoordsTracker/blob/master/src/settings.yml
+
 settings:
   check_update: true # If true, when you (re)load the plugin, it try to check if a new version is available
   
@@ -13,7 +16,7 @@ settings:
 
 locales:
   en:
-    name: "coords"
+    name: "coords" # Only use alphabetic and numeric values, not space
 
     list: "{prefix}&rNamed coordinates: {list}."
     list_empty: "{prefix}&rNo named coordinates."
@@ -40,8 +43,10 @@ locales:
         &r- &c/{command} &e{tracker} &6{STOP} &3<name>
         &7  End the tracking of this named coordinate.
 
+    target_auto_disabled: "{prefix}&3You've reached &b{target}&3, tracking disabled in &b{tracker}&3 tracker."
+
   fr:
-    name: "coords"
+    name: "coords" # N'utilise que des chiffres et des lettres, pas d'espace
 
     list: "{prefix}&rCoordonnées nommées : {list}."
     list_empty: "{prefix}&rAucunes coordonnées nommées."
@@ -67,3 +72,5 @@ locales:
       STOP: |
         &r- &c/{command} &e{tracker} &6{STOP} &3<nom>
         &7  Arrête le pistage d'une coordonnée nommée.
+
+    target_auto_disabled: "{prefix}&3Tu as atteint &b{target}&3, pistage désactivé dans le tracker &b{tracker}&3."
