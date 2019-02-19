@@ -31,7 +31,7 @@ public class CoordsTracker extends AbstractTracker {
 
   @Override
   public String version() {
-    return "4";
+    return "5";
   }
 
   // ----------------------------------------------------------------------------------------------

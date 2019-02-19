@@ -20,3 +20,11 @@ Read [settings.yml](https://github.com/arboriginal/SCT-CoordsTracker/blob/master
     - **scompass.use**
     - **scompass.track**
     - **scompass.track.COORDS** (or **scompass.track.***)
+
+**Optional:** (require you set `settings.autoload_target:true`)
+    
+- All named coords also use dynamic permissions to be automatically tracked on player join:
+    - **scompass.track.auto.COORDS.`<name>`**
+    - **scompass.track.auto.COORDS.base** for example to auto track the coordinate named "base"
+- To auto track all named coords (without **scompass.track.auto.COORDS.`<name>`** for each), players need:
+    - **scompass.track.auto.COORDS.***
